@@ -32,4 +32,20 @@ import com.example.pertemuan6.R
 fun FormIsian(
     jenisK: List<String> = listOf("Laki-laki", "Perempuan"),
     OnSubmitBtnClick: () -> Unit
-)
+) {
+    Scaffold(
+        modifier = Modifier,
+        topBar = {
+            TopAppBar(
+                title = {
+                    Text(
+                        text = "Form Isian",
+                        color = Color.White
+                    )
+                },
+                colors = TopAppBarDefaults.mediumTopAppBarColors(
+                    containerColor = colorResource(id = R.color.teal_700)
+                )
+            )
+        }
+    )
